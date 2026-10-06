@@ -85,7 +85,7 @@
         "titleinfo_caps_artist": true,
         "titleinfo_caps_title": true,
         "titleinfo_trim_prefix_suffix": true,
-        "center_rt": true,
+        "center_rt": false,
         "default": [
             {
                 "rtplus": [
