@@ -1,0 +1,141 @@
+{
+    "local_encoder": {
+        "enabled": true,
+        "ip": "127.0.0.1",
+        "port": 8067
+    },
+    "uecp_server": {
+        "enabled": false,
+        "ip": "ws://127.0.0.1/rds",
+        "password": "Password"
+    },
+    "radiodj_listen": {
+        "ip": "127.0.0.1",
+        "port": 58998
+    },
+    "uecp_settings": {
+        "dsn": 1,
+        "psn": 0,
+        "rt_repeat": 0,
+        "rtp_group": 24,
+        "odaflag_send_frequency": 8000,
+        "ab_toggle": true,
+        "rt_termination": true,
+        "rtp_method": "MEC24",
+        "group_sequence": "0A, 0A, 0A, 2A"
+    },
+    "rdsps_settings": {
+        "dyn_ps": true,
+        "station_name": "RDS PS",
+        "title_info_format": "{artist} - {title}",
+        "center_title_info": true,
+        "center_station_name": true,
+        "remove_accents": true,
+        "message_duration": 5,
+        "title_info_repeats": 3,
+        "station_name_repeats": 3,
+        "caps_artist": true,
+        "caps_title": true
+    },
+    "instance_name": "Your Radio Station",
+    "timezone": "Europe/Zurich",
+    "rdj_news_trigger_key": "tracktype",
+    "rdj_news_trigger_value": 10,
+    "show_news_in_rt": true,
+    "static_rds": {
+        "pi": 65535,
+        "default_pty": 10,
+        "default_ptyn": "PTYN",
+        "lps": "Long PS",
+        "default_pin": [
+            0,
+            0,
+            0
+        ],
+        "ta": {
+            "ta": 0,
+            "tp": 1
+        },
+        "diptyi": {
+            "ms": 1,
+            "ah": 0,
+            "cmp": 0,
+            "dpty": 1
+        },
+        "ms": 1,
+        "af": [
+            100.0,
+            97.5
+        ],
+        "ecc": 225,
+        "lic": 9,
+        "gvc_seq": [
+            0,
+            3
+        ],
+        "news_pty": 1,
+        "news_ptyn": "News"
+    },
+    "radiotext": {
+        "defaultrt_duration": 17,
+        "titleinfo_duration": 17,
+        "titleinfo_mode": 0,
+        "titleinfo_format_template": "Now playing: {title} by {artist}",
+        "titleinfo_remove_accents": true,
+        "titleinfo_caps_artist": true,
+        "titleinfo_caps_title": true,
+        "titleinfo_trim_prefix_suffix": true,
+        "center_rt": true,
+        "default": [
+            {
+                "rtplus": [
+                    false,
+                    true,
+                    10,
+                    0,
+                    23,
+                    0,
+                    0,
+                    0
+                ],
+                "text": "Default Radiotext string"
+            }
+        ]
+    },
+    "enable_showschedule": true,
+    "showstringrt_duration": 17,
+    "shows": [
+        {
+            "name": "Test",
+            "from_hour": 0,
+            "to_hour": 24,
+            "weekdays": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "pty": 22,
+            "ptyn": "Test",
+            "update_pin": true,
+            "radiotexts": [
+                {
+                    "rtplus": [
+                        false,
+                        true,
+                        33,
+                        0,
+                        23,
+                        0,
+                        0,
+                        0
+                    ],
+                    "text": "This is a show radiotext"
+                }
+            ]
+        }
+    ]
+}
